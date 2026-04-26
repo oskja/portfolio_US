@@ -1,10 +1,22 @@
-# Veterinary Image Classification (Prototype)
+# \# AI Veterinary Image Classifier
 
-## Goal
-Support preliminary classification of animal images.
+# 
 
-## Approach
-Simple ML prototype for concept validation.
+# \## Goal
 
-## Tech
-Python / scikit-learn
+# Simple prototype to demonstrate ML-based classification.
+
+# 
+
+# \## Output
+
+# \- Input: image features
+
+# \- Output: Dog / Cat classification
+
+# 
+
+# \## Tech
+
+# Python
+

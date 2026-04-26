@@ -1,15 +1,26 @@
 let items = [];
 
-function createItem(text) {
-  items.push({ id: Date.now(), text });
+function add() {
+  const value = document.getElementById("item").value;
+  items.push({ id: Date.now(), value });
   render();
 }
 
-function deleteItem(id) {
+function remove(id) {
   items = items.filter(i => i.id !== id);
   render();
 }
 
 function render() {
-  console.log(items);
+  const list = document.getElementById("list");
+  list.innerHTML = "";
+
+  items.forEach(i => {
+    list.innerHTML += `
+      <li>
+        ${i.value}
+        <button onclick="remove(${i.id})">X</button>
+      </li>
+    `;
+  });
 }

@@ -1,4 +1,9 @@
 def predict(feature):
-    if sum(feature) > 1:
+    score = sum(feature)
+
+    if score > 1:
         return "Dog"
-    return "Cat"
+    else:
+        return "Cat"
+
+print(predict([0.8, 0.5]))
